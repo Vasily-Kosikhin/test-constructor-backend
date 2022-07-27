@@ -34,9 +34,9 @@ app.use('/api/completed', completedRouter);
 app.use('/api/result', resultRouter);
 app.use(errorMiddleware);
 
-// app.get('/', (req, res) => {
-//   res.end('<h1>Hi! I am working here!</h1>');
-// });
+app.get('/', (req, res) => {
+  res.end('<h1>Hi! I am working here now!!!</h1>');
+});
 
 const start = async () => {
   try {
